@@ -1,16 +1,32 @@
 {
-    "name": "@misterzik/slim-navie",
-    "version": "0.0.9",
-    "description": "Slim Navie - Simplistic Navigation",
-    "main": " dist/js/index.js",
-    "repository": "https://github.com/misterzik/slim-navie.git",
-    "author": "MisterZik",
-    "license": "MIT",
-    "scripts": {
-        "start": ""
-    },
-    "dependencies": {
-    },
-    "devDependencies": {
-    }
+  "name": "@misterzik/slim-navie",
+  "version": "0.0.9",
+  "description": "Slim Navie - Simplistic Navigation",
+  "main": " dist/js/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misterzik/slim-navie.git"
+  },
+  "author": "MisterZik",
+  "license": "MIT",
+  "scripts": {
+    "start": ""
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "bugs": {
+    "url": "https://github.com/misterzik/slim-navie/issues"
+  },
+  "homepage": "https://github.com/misterzik/slim-navie#readme",
+  "keywords": [
+    "navigation",
+    "css",
+    "css",
+    "navigation",
+    "js",
+    "navigation",
+    "small",
+    "css",
+    "navigation"
+  ]
 }
