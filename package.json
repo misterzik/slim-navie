@@ -1,0 +1,16 @@
+{
+    "name": "@misterzik/slim-navie",
+    "version": "0.0.9",
+    "description": "Slim Navie - Simplistic Navigation",
+    "main": " dist/js/index.js",
+    "repository": "https://github.com/misterzik/slim-navie.git",
+    "author": "MisterZik",
+    "license": "MIT",
+    "scripts": {
+        "start": ""
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+    }
+}
