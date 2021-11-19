@@ -1,117 +1,116 @@
-![alt text](logo-navie-slim.png "Color.es by MisterZik")	
-## slim-NAVIE	
----	
-
-Slim-Navie is a tiny bit CSS library fueled with SCSS on the back.	
-
-![alt text](Showcase.png "Background colors & Font Colors based on Popular Palettes for 2017. (CSS Only)")	
-
-### Installation	
-* Download [ZIP](https://github.com/misterzik/slim-navie/archive/master.zip) or Clone Project	
-
-    `git clone https://github.com/misterzik/slim-navie.git`	
-
-* Npm	
-
-    `npm install @misterzik/slim-navie`	
+![alt text](logo-navie-slim.png "Color.es by MisterZik")
+## slim-NAVIE
 
 
-### Usage	
-Slim-Navie comes with a built-in demo, Please refer to folder `/public`. Install the package,json by using npm and doing `npm install` this will isntall dependencies for local host demo.	
 
-Note: If you would like to skip the demo, all you have to do is include the css and js on your project directory:	
-
-1. Include the `css` files located in the `dist` folder on your root folder.	
-
-2. Include this new files on your `index.html` or `.html` file were you would like to implement slim-navie.	
-```	
-<link rel="stylesheet" href="slim-navie.min.css">	
-```	
-and the javascript file:	
-```	
-<script src="js/navie.min.js"></script>	
-<script>	
-  $(this).navie();	
-</script>	
-```	
-3. With navie we wrap around the `nav` element so to start the plugin all you need is to start the `nav` tag.	
+   
+![alt text](Showcase.png "Background colors & Font Colors based on Popular Palettes for 2017. (CSS Only)")
 
 
-Example )	
+>Slim-Navie JS is a light navigation web component driven by a configuration, was built back in jQuery days, If you are interested in that version, Switch over to branch: Legacy-jQuery, it comes with a built-in demo for test. 
+So long jQuery <3, The new version is mainly built in to use for react consumption, or ES6+.
 
-```	
-<nav>	
-      <div class="brand">	
-        <a href="#!">Logo</a>	
-      </div>	
-      <div class="nav-mobile">	
-        <a id="nav-toggle" href="#!"><span></span></a>	
-      </div>	
-      <ul class="nav-list">	
-        <li>	
-          <a href="#!">Home</a>	
-        </li>	
-        <li>	
-          <a href="#!">About</a>	
-        </li>	
-        <li>	
-          <a href="#!">Services</a>	
-        </li>	
-        <li>	
-          <a href="#!">Pricing</a>	
-        </li>	
-        <li>	
-          <a href="#!">Contact</a>	
-          <ul class="nav-dropdown">	
-            <li>	
-              <a href="#!">Support</a>	
-            </li>	
-            <li>	
-              <a href="#!">Sales</a>	
-            </li>	
-          </ul>	
-        </li>	
-      </ul>	
-    </nav>	
-```	
+## Installation
+* ##### Download [ZIP](https://github.com/misterzik/slim-navie/archive/master.zip) or Clone Project
+
+    ```
+    git clone https://github.com/misterzik/slim-navie.git
+    ```
+
+* ##### NPM CLI
+
+    ```
+    npm install --save @misterzik/slim-navie
+    ```
 
 
- Would you like a lighter menu ? .. sure you can do that, we built slim-navie with two options, To use this, Please go ahead and add the class `light` to the `nav` element.	
+## Usage
+Slim-Navi is simple to use; After installing the package on your dependencies folder make sure to include it on your React App;
 
- Example )	
+```
+import {SlimNavi} from '@misterzik/slim-navie/dist/index.cjs.js';
+```
+and for the styling use;
+```
+import '@misterzik/slim-navie/dist/index.cjs.css';
+```
 
-```	
-<nav clas="light">	
-      <div class="brand">	
-        <a href="#!">Logo</a>	
-      </div>	
-      <div class="nav-mobile">	
-        <a id="nav-toggle" href="#!"><span></span></a>	
-      </div>	
-      <ul class="nav-list">	
-        <li>	
-          <a href="#!">Home</a>	
-        </li>	
-        <li>	
-          <a href="#!">About</a>	
-        </li>	
-        <li>	
-          <a href="#!">Services</a>	
-        </li>	
-        <li>	
-          <a href="#!">Pricing</a>	
-        </li>	
-        <li>	
-          <a href="#!">Contact</a>	
-          <ul class="nav-dropdown">	
-            <li>	
-              <a href="#!">Support</a>	
-            </li>	
-            <li>	
-              <a href="#!">Sales</a>	
-            </li>	
-          </ul>	
-        </li>	
-      </ul>	
-    </nav>	
-```	
+### Configuration
+Slim-Navie uses a configuration to build the basic skeleton of the menu;
+
+```
+const NavConfig = {
+	brand: 'Company CO',
+	theme: 'light', // 'dark'
+	_hasLogo: false,
+	data: [
+		{
+			id: 0,
+			title: 'Title',
+			alt: 'Title Alt',
+			href: '/home',
+			target: '_self',
+			_isHash: false,
+			_isDropdown: false,
+			dropdown: [{}],
+			_hasRouter: false
+		},
+		{
+			id: 1,
+			title: 'Title',
+			alt: 'Title Alt',
+			href: '#',
+			target: '_self',
+			_isHash: false,
+			_isDropdown: true,
+			dropdown: [
+				{
+					title: 'Dropdown Title',
+					alt: '',
+					href: '/#dropdown',
+					target: '_self',
+					_isHash: false,
+				},
+				{
+					title: 'Dropdown Title',
+					alt: '',
+					href: '/#dropdown-title',
+					target: '_self',
+					_isHash: false
+				}
+			],
+			_hasRouter: false
+		}
+	]
+}
+```
+
+
+## React Component
+
+```
+<SlimNav config={NavConfig}
+	float={'right'}
+	theme={'dark'}>
+	    COMPANY CO
+</SlimNav>
+```
+Slim-Navi comes with two pre-defined themes, you can choose from 'light' or 'dark' theme by switching
+the theme option when using the handle. Float takes care of the position of the list of links.
+
+
+## Required Plugins
+
+| Plugin | Required |
+| ------ | ------ |
+| React | Component for React |
+| React-Router | Optional |
+
+## Development
+
+Want to contribute? Great, make a pull we will review!
+
+
+## License
+
+MIT
