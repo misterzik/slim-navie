@@ -1,8 +1,8 @@
 {
   "name": "@misterzik/slim-navie",
-  "version": "0.0.9",
-  "description": "Slim Navie - Simplistic Navigation",
-  "main": " dist/js/index.js",
+  "version": "1.0.0",
+  "description": "Slim-Navie JS is a light navigation web component driven by a configuration, Simplistic Navigation built in React.",
+  "main": "/dist/index.cjs.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/misterzik/slim-navie.git"
@@ -10,23 +10,42 @@
   "author": "MisterZik",
   "license": "MIT",
   "scripts": {
-    "start": ""
+    "build": "rollup -c"
   },
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.0.2",
+    "rollup": "^2.60.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-syntax-jsx": "^7.16.0",
+    "@babel/plugin-transform-runtime": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "autoprefixer": "^10.4.0",
+    "node-sass": "^6.0.1",
+    "postcss": "^8.3.11",
+    "react": "^17.0.2",
+    "rollup-plugin-scss": "^3.0.0",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "keywords": [
+    "react navigation",
+    "react-router",
+    "tiny navigation",
+    "navigation",
+    "slim navie",
+    "js",
+    "css",
+    "bootstrap navigation"
+  ],
   "bugs": {
     "url": "https://github.com/misterzik/slim-navie/issues"
   },
-  "homepage": "https://github.com/misterzik/slim-navie#readme",
-  "keywords": [
-    "navigation",
-    "css",
-    "css",
-    "navigation",
-    "js",
-    "navigation",
-    "small",
-    "css",
-    "navigation"
-  ]
+  "homepage": "https://github.com/misterzik/slim-navie#readme"
 }
