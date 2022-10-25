@@ -1,1 +1,1 @@
-export { default as SlimNav } from "./SlimNav.js";
+export{default as SlimNav}from"./SlimNav.js";import"react-router";
