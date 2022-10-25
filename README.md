@@ -33,7 +33,29 @@ Download the script to your local root.
 
   ```
   git clone https://github.com/misterzik/slim-navie.git
+
   ```
+
+
+
+## Required Plugins
+
+| Plugin       | Required            |
+| ------------ | ------------------- |
+| React        | Component for React |
+| React-Router | Highly Recommended  |
+
+
+## React Component
+
+```
+<SlimNav config={NavConfig}
+	float={'right'}
+	theme={'dark'}>
+	    COMPANY CO
+</SlimNav>
+```
+
 
 ## Usage
 
@@ -118,27 +140,9 @@ data: [
 ]
 ```
 
-## React Component
-
-```
-<SlimNav config={NavConfig}
-	float={'right'}
-	theme={'dark'}>
-	    COMPANY CO
-</SlimNav>
-```
-
 ## Themes
 
 Slim-Navi comes with two pre-defined themes, you can choose from 'light' or 'dark' theme by switching the theme option when using the handle. Float takes care of the position of the list of links.
-
-
-## Required Plugins
-
-| Plugin       | Required            |
-| ------------ | ------------------- |
-| React        | Component for React |
-| React-Router | Highly Recommended  |
 
 
 
