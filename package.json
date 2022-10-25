@@ -1,6 +1,6 @@
 {
   "name": "@misterzik/slim-navie",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Slim-NavieJS, also known as; Slim Navigation Expression, is a light navigation component driven by configurations, Achieving a Simple Navigation ready to use built on React.",
   "main": "index.js",
   "repository": {
