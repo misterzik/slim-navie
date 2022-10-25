@@ -1,6 +1,6 @@
 {
   "name": "@misterzik/slim-navie",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Slim-NavieJS, also known as; Slim Navigation Expression, is a light navigation component driven by configurations, Achieving a Simple Navigation ready to use built on React.",
   "main": "index.js",
   "repository": {
@@ -9,11 +9,9 @@
   },
   "author": "MisterZik",
   "license": "MIT",
-  "scripts": {
-  },
+  "scripts": {},
   "dependencies": {
-  },
-  "devDependencies": {
+    "react-router-dom": "^6.4.2"
   },
   "keywords": [
     "react navigation",
